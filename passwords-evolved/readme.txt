@@ -5,15 +5,17 @@ Author URI: https://carlalexander.ca
 Plugin URI: https://github.com/carlalexander/passwords-evolved
 Tags: security, authentication, password, have i been pwned
 Requires at least: 5.2
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Requires PHP: 5.6
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 A reimagining of WordPress authentication using modern security practices.
 
 == Description ==
+
+**Important Notice:** This plugin is no longer supported on wordpress.org. Please open issues on [GitHub](https://github.com/carlalexander/passwords-evolved/issues).
 
 The goal of this plugin is to shore up the WordPress authentication using standard security practice recommendations. At this time, the plugin improves WordPress authentication by doing the following:
 
@@ -42,6 +44,12 @@ No, the plugin never sends your full password to a 3rd party for verification. T
 The plugin then handles the rest of the password validation itself. It compares the SHA-1 hashed version of your password to the passwords returned by the 3rd party. We call this process [k-anonymity](https://en.wikipedia.org/wiki/K-anonymity). (You can read more about validating leaked passwords with it [here](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/).)
 
 == Changelog ==
+
+= 1.3.4 =
+
+*Released: 2024-11-27*
+
+ * Update `wp_set_password` function to match current wordpress version [carlalexander]
 
 = 1.3.3 =
 
